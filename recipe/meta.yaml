@@ -1,5 +1,5 @@
 {% set name = "markdown-include" %}
-{% set version = "0.7.0" %}
+{% set version = "0.7.2" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/cmacmackin/markdown-include/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 5944cac326e3f071188ce902c6edeacbf5ae7c33273875594debf93e5d850a72
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 84070d0244367f99bdf9bbdd49ff7b9f51517bbee7582ad7aa8ff363e30d8157
 
 build:
   number: 0
@@ -18,10 +18,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=2.7
+    - python >=3.7
+    - setuptools_scm >=6.2
   run:
     - markdown >=3.0
-    - python >=2.7
+    - python >=3.7
 
 test:
   imports:
@@ -33,7 +34,7 @@ test:
 
 about:
   home: https://github.com/cmacmackin/markdown-include/
-  summary:  Provides syntax for Python-Markdown which allows for the inclusion of the contents of other Markdown documents. 
+  summary: Provides syntax for Python-Markdown which allows for the inclusion of the contents of other Markdown documents.
   description: |
     This is an extension to Python-Markdown which provides an "include" function,
     similar to that found in LaTeX (and also the C pre-processor and Fortran). I
