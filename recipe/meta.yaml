@@ -1,5 +1,5 @@
 {% set name = "markdown-include" %}
-{% set version = "0.8.0" %}
+{% set version = "0.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b8f6b6f4e8b506cbe773d7e26c74a97d1354c35f3a3452d3449140a8f578d665
+  sha256: 1d0623e0fc2757c38d35df53752768356162284259d259c486b4ab6285cdbbe3
 
 build:
   number: 0
